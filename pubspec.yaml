@@ -1,0 +1,30 @@
+name: 'json_dynamic_widget_plugin_js'
+description: 'A plugin to the JSON Dynamic Widget to provide JS support to the widgets'
+homepage: 'https://github.com/peiffer-innovations/json_dynamic_widget_plugin_js'
+version: '1.0.0'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+analyzer:
+  exclude:
+    - 'lib/generated/**'
+    - 'lib/**/*.g.dart'
+
+dependencies:
+  child_builder: '^2.0.1'
+  flutter:
+    sdk: 'flutter'
+  flutter_js: ^0.7.0
+  json_dynamic_widget: '^6.0.6+2'
+  logging: '^1.1.1'
+  meta: '^1.7.0'
+  uuid: '^3.0.7'
+ 
+
+false_secrets:
+  - 'example/web/index.html'
+
+dev_dependencies:
+  flutter_test:
+    sdk: 'flutter'
