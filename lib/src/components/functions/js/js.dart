@@ -15,7 +15,7 @@ class JsFunction {
   }) {
     {
       try {
-        return JsService.Get().evaluate(args?[0] ?? '');
+        return JsService.instance.evaluate(args?[0] ?? '');
       } catch (e) {
         throw Exception('Error evaluating JS: $e');
       }
