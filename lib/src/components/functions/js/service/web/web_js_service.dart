@@ -3,6 +3,9 @@ library js;
 
 import 'dart:js_interop';
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:js/js_util.dart' as js_util;
 
 import '../js_service.dart';
