@@ -12,7 +12,9 @@ class RuntimeJsService implements JsService {
     final runtimeJsResult = _jsRuntime.evaluate(command);
     var result = runtimeJsResult.rawResult;
     if (runtimeJsResult.isPromise) {
-      result = _jsRuntime.handlePromise(runtimeJsResult).then((value) => value.rawResult);
+      result = _jsRuntime
+          .handlePromise(runtimeJsResult)
+          .then((value) => value.rawResult);
     }
     if (runtimeJsResult.isError) {
       throw Exception(runtimeJsResult.rawResult);
