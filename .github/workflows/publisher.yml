@@ -27,20 +27,6 @@ jobs:
           ref: main
           path: schemas
 
-      - name: Update Schemas
-        run: |
-          git config --global user.name "action"
-          git config --global user.email "noop@github.com"
-          git config --global url."https://action:${{secrets.REPO_TOKEN}}@github.com/".insteadOf https://github.com/
-          rm -rf schemas/schemas/json_dynamic_widget_plugin_js
-          mkdir schemas/schemas/json_dynamic_widget_plugin_js
-          cp output/* schemas/schemas/json_dynamic_widget_plugin_js
-          cd schemas
-          git add .
-          git commit --allow-empty -m "json_dynamic_widget_plugin_js: schema update"
-          git push origin HEAD:main
-          cd ..
-
       - name: Publish
         uses: peiffer-innovations/actions-pub-publish@v1.0.2
         with:
