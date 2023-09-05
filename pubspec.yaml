@@ -1,7 +1,7 @@
 name: 'json_dynamic_widget_plugin_js'
 description: 'A plugin to the JSON Dynamic Widget to provide JS support to the widgets'
 homepage: 'https://github.com/peiffer-innovations/json_dynamic_widget_plugin_js'
-version: '1.0.0+5'
+version: '1.0.0+6'
 
 environment: 
   sdk: '>=3.0.0 <4.0.0'
@@ -21,7 +21,7 @@ dependencies:
   json_dynamic_widget: '^6.1.2+1'
   logging: '^1.2.0'
   meta: '^1.9.1'
-  uuid: '^3.0.7'
+  uuid: '^4.0.0'
 
 false_secrets: 
   - 'example/web/index.html'
