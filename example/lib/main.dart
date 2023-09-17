@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:json_dynamic_widget_plugin_js/json_dynamic_widget_plugin_js.dart';
 import 'package:logging/logging.dart';
@@ -28,7 +26,7 @@ void main() async {
 
   final data = JsonWidgetData.fromDynamic(
     json.decode(await rootBundle.loadString('assets/pages/js.json')),
-  )!;
+  );
 
   runApp(
     MaterialApp(
@@ -42,7 +40,7 @@ void main() async {
 }
 
 class JsWidgetPage extends StatelessWidget {
-  JsWidgetPage({
+  const JsWidgetPage({
     Key? key,
     required this.data,
   }) : super(key: key);
