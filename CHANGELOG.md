@@ -1,3 +1,8 @@
+## [2.0.0+1] - September 19, 2023
+
+* Automated dependency updates
+
+
 ## [2.0.0] - September 16th, 2023
 
 * Updated to use [json_dynamic_widget](https://pub.dev/packages/json_dynamic_widget) version `7.0.0` and updated for code generation.
@@ -36,6 +41,7 @@
 ## [1.0.0] - July 5th, 2023
 
 * Initial release
+
 
 
 
