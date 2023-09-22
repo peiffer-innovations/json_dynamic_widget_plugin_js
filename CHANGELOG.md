@@ -1,3 +1,7 @@
+## [2.0.1] - September 22, 2023
+
+* Example fix after the update to 7.0.0
+
 ## [2.0.0+1] - September 19, 2023
 
 * Automated dependency updates

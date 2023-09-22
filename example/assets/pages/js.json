@@ -14,23 +14,25 @@
     },
     "body": {
       "type": "list_view",
-      "children": [
-        {
-          "type": "padding",
-          "args": {
-            "padding": [
-              16.0,
-              8.0
-            ]
-          },
-          "child": {
-            "type": "text",
+      "args": {
+        "children": [
+          {
+            "type": "padding",
             "args": {
-              "text": "${'Today is ' + js('new Date().toString()')}"
+              "child": {
+                "type": "text",
+                "args": {
+                  "text": "${'Today is ' + js('new Date().toString()')}"
+                }
+              },
+              "padding": [
+                16.0,
+                8.0
+              ]
             }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }
