@@ -1,3 +1,8 @@
+## [2.0.1+4] - October 29, 2023
+
+* Fixes for flutter analyze
+
+
 ## [2.0.1+3] - October 10, 2023
 
 * Automated dependency updates
