@@ -1,6 +1,7 @@
 name: Flutter Pages Deployer
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     # paths:
@@ -42,11 +43,14 @@ jobs:
       - name: Validate
         env:
           LIBQUICKJSC_TEST_PATH: ${{ github.workspace }}/test/assets/libquickjs_c_bridge_plugin.so
-        uses: peiffer-innovations/actions-flutter-validate@v1
+        uses: peiffer-innovations/actions-flutter-validate@v2
+        with:
+          generate_code: true
 
       - name: Web
         uses: peiffer-innovations/actions-flutter-deploy-pages@v1
         with:
+          build_flags: --no-tree-shake-icons
           build_mode: release
           build_number: ${{ needs.build_number.outputs.buildnumber }}
           deploy_path: web
