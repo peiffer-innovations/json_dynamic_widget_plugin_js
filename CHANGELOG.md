@@ -1,3 +1,8 @@
+## [2.0.2] - January 30, 2024
+
+* Fixed web support
+
+
 ## [2.0.1+9] - January 30, 2024
 
 * Automated dependency updates
