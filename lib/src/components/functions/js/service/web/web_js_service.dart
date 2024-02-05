@@ -6,16 +6,22 @@ import 'package:js/js_util.dart' as js_util;
 import '../js_service.dart';
 
 @JS('window.eval')
-external dynamic eval(dynamic arg);
+external JSAny? eval(String arg);
 
 final JsService instance = WebJsService();
 
 class WebJsService implements JsService {
   @override
   dynamic evaluate(String command) {
-    var result = eval(command);
-    if (isPromise(result)) {
-      result = js_util.promiseToFuture(result);
+    final jsResult = eval(command);
+    if (jsResult == null) {
+      return null;
+    }
+    dynamic result;
+    if (isPromise(jsResult)) {
+      result = js_util.promiseToFuture(jsResult);
+    } else {
+      result = jsResult.dartify();
     }
     return result;
   }
