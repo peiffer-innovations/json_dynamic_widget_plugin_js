@@ -1,3 +1,8 @@
+## [2.0.2+13] - June 8, 2024
+
+* Automated dependency updates
+
+
 ## [2.0.2+12] - June 8, 2024
 
 * Fixes for workflows
@@ -154,37 +159,3 @@
 ## [1.0.0] - July 5th, 2023
 
 * Initial release
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
