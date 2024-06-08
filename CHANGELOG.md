@@ -1,4 +1,4 @@
-## [2.0.1+12] - June 8, 2024
+## [2.0.2+12] - June 8, 2024
 
 * Fixes for workflows
 
