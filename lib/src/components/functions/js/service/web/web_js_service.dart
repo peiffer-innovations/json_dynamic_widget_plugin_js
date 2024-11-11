@@ -1,5 +1,5 @@
 @JS()
-library js;
+library;
 
 import 'dart:js_interop';
 import 'package:js/js_util.dart' as js_util;
