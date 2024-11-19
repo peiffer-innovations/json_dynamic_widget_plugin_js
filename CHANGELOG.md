@@ -1,3 +1,8 @@
+## [2.0.2+22] - November 19, 2024
+
+* Automated dependency updates
+
+
 ## [2.0.2+21] - November 12, 2024
 
 * Automated dependency updates
