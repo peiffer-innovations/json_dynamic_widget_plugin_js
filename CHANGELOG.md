@@ -1,3 +1,8 @@
+## [2.1.0] - February 23, 2025
+
+* Supporting json_dynamic_widget 9.0.0
+ 
+
 ## [2.0.2+25] - December 10, 2024
 
 * Automated dependency updates

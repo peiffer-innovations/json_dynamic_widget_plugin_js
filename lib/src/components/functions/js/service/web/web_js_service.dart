@@ -2,7 +2,8 @@
 library;
 
 import 'dart:js_interop';
-import 'package:js/js_util.dart' as js_util;
+// ignore: deprecated_member_use, avoid_web_libraries_in_flutter
+import 'dart:js_util';
 import '../js_service.dart';
 
 @JS('window.eval')
@@ -19,7 +20,7 @@ class WebJsService implements JsService {
     }
     dynamic result;
     if (isPromise(jsResult)) {
-      result = js_util.promiseToFuture(jsResult);
+      result = promiseToFuture(jsResult);
     } else {
       result = jsResult.dartify();
     }
@@ -27,8 +28,8 @@ class WebJsService implements JsService {
   }
 
   bool isPromise(dynamic jsValue) {
-    return js_util.typeofEquals(jsValue, 'object') &&
-        js_util.hasProperty(jsValue, 'then') &&
-        js_util.getProperty(jsValue, 'then') is Function;
+    return typeofEquals(jsValue, 'object') &&
+        hasProperty(jsValue, 'then') &&
+        getProperty(jsValue, 'then') is Function;
   }
 }
