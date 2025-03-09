@@ -1,3 +1,8 @@
+## [2.1.1] - March 4, 2025
+
+* Replaced js_util with js_interop
+
+
 ## [2.1.0+2] - March 4, 2025
 
 * Automated dependency updates
