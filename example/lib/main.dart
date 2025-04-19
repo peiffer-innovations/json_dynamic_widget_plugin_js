@@ -31,19 +31,14 @@ void main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: JsWidgetPage(
-        data: data,
-      ),
+      home: JsWidgetPage(data: data),
       theme: ThemeData.light(),
     ),
   );
 }
 
 class JsWidgetPage extends StatelessWidget {
-  const JsWidgetPage({
-    super.key,
-    required this.data,
-  });
+  const JsWidgetPage({super.key, required this.data});
 
   final JsonWidgetData data;
 

@@ -9,7 +9,7 @@ class JsFunction {
   static const JsonWidgetFunction body = _body;
   static const key = 'js';
 
-  static dynamic _body({
+  static String _body({
     required List<dynamic>? args,
     required JsonWidgetRegistry registry,
   }) {

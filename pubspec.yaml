@@ -15,7 +15,7 @@ dependencies:
   child_builder: "^2.0.2"
   flutter:
     sdk: "flutter"
-  flutter_js: "^0.8.2"
+  jsf: "^0.4.3"
   json_class: "^3.0.1"
   json_dynamic_widget: "^9.0.0+6"
   json_theme: "^8.0.0+2"

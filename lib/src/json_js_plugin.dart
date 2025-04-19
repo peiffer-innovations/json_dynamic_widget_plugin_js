@@ -4,9 +4,6 @@ import 'components/functions/js/js.dart';
 
 class JsonJsPlugin {
   static void bind(JsonWidgetRegistry registry) {
-    registry.registerFunction(
-      JsFunction.key,
-      JsFunction.body,
-    );
+    registry.registerFunction(JsFunction.key, JsFunction.body);
   }
 }
