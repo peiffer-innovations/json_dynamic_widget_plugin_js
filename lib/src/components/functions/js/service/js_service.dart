@@ -1,5 +1,7 @@
 import 'package:jsf/jsf.dart';
 
+import 'utils.dart';
+
 class JsService {
   JsService._internal() {
     _jsRuntime = JsRuntime();
@@ -9,8 +11,8 @@ class JsService {
 
   late final JsRuntime _jsRuntime;
 
-  String evaluate(String command) {
+  dynamic evaluate(String command) {
     final result = _jsRuntime.eval(command);
-    return result;
+    return stringToDartType(result);
   }
 }
