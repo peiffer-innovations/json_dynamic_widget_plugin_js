@@ -26,8 +26,9 @@
 
 ## Introduction
 
-Plugin to the [JSON Dynamic Widget](https://peiffer-innovations.github.io/json_dynamic_widget) to provide JS support by using
-vanilla JS for web and [Flutter JS](https://github.com/abner/flutter_js) for others platforms.
+Plugin to the [JSON Dynamic Widget](https://peiffer-innovations.github.io/json_dynamic_widget) to provide JS support by using [JSF](https://github.com/moluopro/jsf).
+
+> Due to current limitations in [JSF](https://github.com/moluopro/jsf), the result returned from JavaScript is always a `string`. At the moment, we perform a simple parsing in the plugin to recognize basic types such as `int`, `double`, and `bool`. If you only need to return a `string`, please change `stringToDartType(result)` to `result` in `js_service.dart`.
 
 
 ## Using the Plugin
