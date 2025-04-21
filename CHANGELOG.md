@@ -1,3 +1,7 @@
+## [2.2.0] - April 21, 2025
+
+* Replaced flutter_js with jsf
+
 ## [2.1.1+3] - April 21, 2025
 
 * Fixed live example

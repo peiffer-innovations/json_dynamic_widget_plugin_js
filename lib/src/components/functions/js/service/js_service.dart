@@ -1,8 +1,18 @@
-import 'runtime/runtime_js_service.dart'
-    if (dart.library.html) 'web/web_js_service.dart' as js_service;
+import 'package:jsf/jsf.dart';
 
-abstract class JsService {
-  dynamic evaluate(String command);
+import 'utils.dart';
 
-  static JsService get instance => js_service.instance;
+class JsService {
+  JsService._internal() {
+    _jsRuntime = JsRuntime();
+  }
+
+  static final JsService instance = JsService._internal();
+
+  late final JsRuntime _jsRuntime;
+
+  dynamic evaluate(String command) {
+    final result = _jsRuntime.eval(command);
+    return stringToDartType(result);
+  }
 }
