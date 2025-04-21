@@ -1,6 +1,12 @@
+## [2.2.0+1] - April 21, 2025
+
+* Restored tests in order to fix build errors
+
+
 ## [2.2.0] - April 21, 2025
 
 * Replaced flutter_js with jsf
+
 
 ## [2.1.1+3] - April 21, 2025
 
