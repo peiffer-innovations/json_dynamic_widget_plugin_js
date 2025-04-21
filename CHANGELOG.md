@@ -1,3 +1,8 @@
+## [2.1.1+3] - April 21, 2025
+
+* Fixed live example
+
+
 ## [2.1.1+2] - March 18, 2025
 
 * Automated dependency updates
