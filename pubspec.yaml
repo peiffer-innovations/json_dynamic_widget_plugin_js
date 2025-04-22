@@ -1,7 +1,7 @@
 name: "json_dynamic_widget_plugin_js"
 description: "A plugin to the JSON Dynamic Widget to provide JS support to the widgets"
 homepage: "https://github.com/peiffer-innovations/json_dynamic_widget_plugin_js"
-version: "2.2.0+1"
+version: "2.2.0+2"
 
 environment:
   sdk: "^3.7.0"
@@ -14,7 +14,7 @@ analyzer:
 dependencies:
   flutter:
     sdk: "flutter"
-  jsf: "^0.4.3"
+  jsf: "^0.4.4"
   json_dynamic_widget: "^9.0.0+6"
 
 false_secrets:

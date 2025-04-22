@@ -1,3 +1,8 @@
+## [2.2.0+2] - April 22, 2025
+
+* Automated dependency updates
+
+
 ## [2.2.0+1] - April 21, 2025
 
 * Restored tests in order to fix build errors
