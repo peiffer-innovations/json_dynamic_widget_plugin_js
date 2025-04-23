@@ -13,6 +13,8 @@ dependencies:
   json_dynamic_widget_plugin_js:
     path: "../"
   logging: "^1.3.0"
+  integration_test:
+    sdk: "flutter"
 
 dev_dependencies:
   flutter_lints: "^5.0.0"
