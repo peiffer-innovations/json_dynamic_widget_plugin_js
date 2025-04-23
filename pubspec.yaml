@@ -14,7 +14,7 @@ analyzer:
 dependencies:
   flutter:
     sdk: "flutter"
-  jsf: "^0.5.1"
+  jsf: "^0.5.2"
   json_dynamic_widget: "^9.0.0+6"
 
 false_secrets:
