@@ -28,6 +28,8 @@
 
 Plugin to the [JSON Dynamic Widget](https://peiffer-innovations.github.io/json_dynamic_widget) to provide JS support by using [JSF](https://github.com/moluopro/jsf).
 
+> Starting from version `0.5.2` of `JSF`, multiple data types are now supported, including `int`, `bigint`, `double`, `bool`, `string`, and `null`.
+
 
 ## Using the Plugin
 
