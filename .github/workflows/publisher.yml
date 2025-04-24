@@ -27,6 +27,17 @@ jobs:
         uses: peiffer-innovations/actions-flutter-validate@v2
         with:
           generate_code: true
+        
+      - name: Integration Test
+        run: |
+          sudo apt-get update -y && sudo apt-get upgrade -y;
+          sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+          sudo apt-get install -y clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+          sudo apt-get install xvfb
+          export DISPLAY=:99.0
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          cd example
+          DISPLAY=:99.0 flutter drive --driver=integration_test/driver.dart --target=integration_test/js_service_test.dart -d linux
 
       - name: Publish
         uses: peiffer-innovations/actions-pub-publish@v1.0.2
