@@ -24,6 +24,8 @@ dev_dependencies:
   build_runner: "^2.4.15"
   flutter_lints: "^5.0.0"
   json_dynamic_widget_codegen: "^2.1.0+3"
+  flutter_test:
+    sdk: "flutter"
 
 permittedLicenses:
   - "Apache-2.0"
