@@ -24,8 +24,6 @@ jobs:
           dart run build_runner build --delete-conflicting-outputs -v
 
       - name: Validate
-        env:
-          LIBQUICKJSC_TEST_PATH: ${{ github.workspace }}/test/assets/libquickjs_c_bridge_plugin.so
         uses: peiffer-innovations/actions-flutter-validate@v2
         with:
           generate_code: true
