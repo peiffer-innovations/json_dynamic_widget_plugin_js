@@ -1,3 +1,8 @@
+## [2.3.0+1] - April 29, 2025
+
+* Automated dependency updates
+
+
 ## [2.3.0] - April 24, 2025
 
 * Upgrade the jsf version to support retrieving JavaScript types from the JsRuntime.
