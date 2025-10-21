@@ -1,3 +1,8 @@
+## [2.3.0+4] - October 21, 2025
+
+* Automated dependency updates
+
+
 ## [2.3.0+3] - May 13, 2025
 
 * Automated dependency updates
